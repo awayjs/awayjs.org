@@ -1,2 +1,2 @@
 # awayjs.org
-Static site for AwayJS
+Static site for AwayJS.
