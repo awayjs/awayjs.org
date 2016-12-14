@@ -14,13 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Awayjs
-email: thepalebluedot@gmail.com
+email: info@awayjs.org
 description: > # this means to ignore newlines until "baseurl:"
-  Awayjs site description (edit _config.yml).
+  Awayjs is the ultimate 3D rendering engine for both typescript and javascript.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: thepalebluedot
-github_username:  thepalebluedot
+twitter_username: awayjs
+github_username:  awayjs
 
 # Build settings
 markdown: kramdown

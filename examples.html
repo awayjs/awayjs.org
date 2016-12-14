@@ -1,0 +1,11 @@
+---
+layout: page
+title: Examples
+permalink: /examples/
+---
+
+{% for example in site.data.examples %}
+- [{{example.title}}]({{example.url}})
+  {{example.description}}
+{% endfor %}
+<ul>
