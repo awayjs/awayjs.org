@@ -2,4 +2,6 @@
 layout: default
 ---
 
-# Coming soon.
+{{site.description}}
+
+{% include under_construction.html %}

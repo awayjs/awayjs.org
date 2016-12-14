@@ -4,4 +4,5 @@ title: Docs
 permalink: /docs/
 ---
 
-This page will expose all the awayjs documentation.
+
+{% include under_construction.html %}
