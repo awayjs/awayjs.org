@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- stable
+script:
+  - bash scripts/deploy.sh
+env:
+  global:
+  - ENCRYPTION_LABEL: a4ac9944ad8d
+notifications:
+  slack:
+    secure: asLn9j8pGSa9pPZfrTMTQtFe58teoeo7KCGg5uF9JYgpxH7TLNlMyiJIBkFUOlBUV3Rv/xrPDPow/BVWbpKI5wOvWl9QCL6gdOjccvb/8we2+2Js2Twjsmkc5mV7PDA1i4giP7Cbvix/9eeJOcGE73kqHcwfOzznOQ/THitQ9//5GcakDsFuWoFOW6+/Gr9WTxmYlUGg4I6TeC8niNzoQb8C10iaTXauTckdNnrDB0neNeGrFksmM6KZYOR6L7m57kHhaRKyhE25u/4Y32kasYVoRhI9+r8W5yT3QhJepV5VJJfrag3DzjUuopN/PWNc+KnnnPjVLsTke7MM8D1sdVN6twlzC6j/iBspoxogjy1Q8e0OBAv5gjK7zOO9vOfnROnWQgQAFGWun1sc7x2IErlhTZBKLGhgSVkHBFMnMIF6+VWtA7jsmx0VoSXNjpuqLM5CRN0oQQ+xvrYdgPT+vmeFAZ0+LdZqaOxT6fzK1/jB2a0DKBGkprg/z3DAOxBDfk7kL2iYfAstqvo/RVbH8dwT+zUdggPdU+ru1l4j34h7ygrRycZGNk4hh0C1k8zLSnwfkf+vURelaCr/Wy4vStww2XYoZYhOlTCGU2teJJF1sXkP/KcnZiCJtNTPanonEb/g3PQdu48/azvJRWRm2C0L6in4cJgs2aPP9BCE/Qc=
