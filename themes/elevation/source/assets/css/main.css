@@ -2208,6 +2208,15 @@
 			padding: 3em 2.25em;
 		}
 
+		.box.special > a {
+			transition: all .2s ease-in-out;
+			padding: 0;
+		}
+
+		.box.special > a:hover {
+			transform: scale(1.025);
+		}
+
 		.box.alt {
 			background: none;
 			box-shadow: none;
@@ -2325,7 +2334,7 @@
 
 			ul.alt li {
 				border-top: solid 1px #dddddd;
-				padding: 0.5em 0;
+				padding: 1.5em 0;
 			}
 
 				ul.alt li:first-child {

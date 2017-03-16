@@ -1,10 +1,10 @@
 # Navigation
 menu:
   Home: /
-  News: /news
-  Docs: /docs
-  Modules: /modules
   Showcase: /showcase
+  News: /news
+  Docs: http://awayjs.github.io/docs
+  Modules: /
 
 # Misc
 favicon: images/favicon.ico

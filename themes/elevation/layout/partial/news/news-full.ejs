@@ -1,0 +1,11 @@
+<li>
+
+    <!-- Title (with link) -->
+    <a href="#">
+        <h2 style="margin: 0;"><%= item.title %></h2>
+    </a>
+
+    <span><%= item.date.format(config.date_format) %></span>
+    <p><%- item.content %></p>
+
+</li>
