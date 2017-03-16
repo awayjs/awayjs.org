@@ -1,2 +1,10 @@
+# Navigation
+menu:
+  Home: /
+  News: /news
+  Docs: /docs
+  Modules: /modules
+  Showcase: /showcase
+
 # Misc
 favicon: images/favicon.ico

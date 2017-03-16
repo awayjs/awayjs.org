@@ -1808,8 +1808,8 @@
 		-webkit-transition: color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
-		color: #e96c77;
-		text-decoration: underline;
+		color: #808080;
+		text-decoration: none;
 	}
 
 		a:hover {
