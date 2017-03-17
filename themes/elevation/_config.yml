@@ -5,6 +5,16 @@ menu:
   News: news/
   Docs: http://awayjs.github.io/docs
   Modules:
+    submenu:
+      core:
+      graphics:
+      scene:
+      stage:
+      renderer:
+      materials:
+      player:
+      view:
+      parsers:
 
 # Misc
 favicon: images/favicon.ico

@@ -2,9 +2,39 @@
     <h1><a href="<%= config.root %>"><%= config.title %></a></h1>
     <nav id="nav">
         <ul>
-            <% for(var i in theme.menu) { %>
-                <li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
-            <% } %>
+            <%
+                for(var name in theme.menu) {
+                    console.log(name);
+                    var obj = theme.menu[name];
+                    if(obj && obj.submenu != null) {
+            %>
+                        <li>
+                            <a href="" class="icon fa-angle-down"><%= name %></a>
+                            <ul>
+            <%
+                            for(var subname in obj.submenu) {
+                                console.log(subname);
+                                var subobj = obj.submenu[subname];
+            %>
+                                <li>
+                                    <a href="<%- url_for(subobj) %>"><%= subname %></a>
+                                </li>
+            <%
+                            }
+            %>
+                            </ul>
+                        </li>
+            <%
+                    }
+                    else {
+            %>
+                        <li>
+                            <a href="<%- url_for(obj) %>"><%= name %></a>
+                        </li>
+            <%
+                    }
+                }
+            %>
 
             <!-- Sub-menu example -->
             <!--<li>-->
