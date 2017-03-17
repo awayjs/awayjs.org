@@ -4,7 +4,7 @@
         <!-- Image -->
         <a href="#" class="image fit">
             <h3><%= item.title %></h3>
-            <img src="/<%- item.path %>thumb.jpg" alt="" />
+            <img src="<%- url_for(item.path) %>thumb.jpg" alt="" />
             <p><%- item.excerpt || item.content %></p>
         </a>
 
