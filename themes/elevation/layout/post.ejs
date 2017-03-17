@@ -1,24 +1,34 @@
 <div class="wrapper style1">
 
-    <!-- Extract first category from post. -->
-    <%
-        console.log(page.categories);
-        var firstCategory;
-        if(page.categories.data.length > 0) {
-            firstCategory = page.categories.data[0].name;
-        }
-    %>
+    <section id="main" class="container">
 
-    <!-- Showcase post -->
-    <!-- We don't show standalone showcase posts, but link to them externally. -->
+        <!-- Extract first category from post. -->
+        <%
+            var firstCategory;
+            if(page.categories.data.length > 0) {
+                firstCategory = page.categories.data[0].name;
+            }
+        %>
 
-    <!-- News post -->
-    <%
-        if(firstCategory == "news") {
-    %>
-        <%- partial('partial/news/news-full', {item: page}) %>
-    <%
-        }
-    %>
+        <!-- Showcase post -->
+        <!-- We don't show standalone showcase posts, but link to them externally. -->
+
+        <!-- News post -->
+        <%
+            if(firstCategory == "news") {
+        %>
+            <header class="major">
+                <h2>News</h2>
+            </header>
+            <section class="box">
+                <%- partial('partial/news/news-full', {item: page}) %>
+            </section>
+        <%
+            }
+        %>
+
+
+
+    </section>
 
 </div>

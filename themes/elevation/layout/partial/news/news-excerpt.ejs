@@ -1,10 +1,6 @@
-<li>
-
-    <!-- Title (with link) -->
-    <a href="<%- config.root %><%- item.path %>">
-        <h3 style="margin: 0; float: left;"><%= item.title %></h3>
-        <span style="float: right;"><%= item.date.format(config.date_format) %></span>
-        <br>
-    </a>
-
-</li>
+<!-- Title (with link) -->
+<a href="<%- config.root %><%- item.path %>">
+    <h3 style="margin: 0; float: left;"><%= item.title %></h3>
+    <span style="float: right;"><%= item.date.format(config.date_format) %></span>
+    <br>
+</a>
