@@ -1,7 +1,9 @@
 ---
-title: Showcase 3
+title: Sensarium
 categories: showcase
-date: 2017-03-16 12:00:00
+link: 'http://www.google.com'
+thumbnail: images/pic03.jpg
+date: 2017-03-17 11:12:27
 tags:
 ---
 

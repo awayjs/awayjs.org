@@ -1,7 +1,7 @@
 ---
-title: Showcase 2
-categories: showcase
-date: 2017-03-16 11:59:55
+title: Away Studios at Digital Shoreditch
+categories: news
+date: 2017-03-17 11:16:28
 tags:
 ---
 

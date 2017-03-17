@@ -1,7 +1,7 @@
 ---
-title: Showcase 1
-categories: showcase
-date: 2017-03-16 11:59:44
+title: We have officially transitioned
+categories: news
+date: 2017-03-17 11:17:08
 tags:
 ---
 

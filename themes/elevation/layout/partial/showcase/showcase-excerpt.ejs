@@ -2,9 +2,9 @@
     <section class="box special">
 
         <!-- Image -->
-        <a href="#" class="image fit">
+        <a href="<%- item.link %>" target="_blank" class="image fit">
             <h3><%= item.title %></h3>
-            <img src="<%- url_for(item.path) %>thumb.jpg" alt="" />
+            <img src="<%- url_for(item.thumbnail) %>" alt="" />
             <p><%- item.excerpt || item.content %></p>
         </a>
 
