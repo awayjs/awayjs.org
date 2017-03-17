@@ -1,0 +1,24 @@
+<div class="wrapper style1">
+
+    <!-- Extract first category from post. -->
+    <%
+        console.log(page.categories);
+        var firstCategory;
+        if(page.categories.data.length > 0) {
+            firstCategory = page.categories.data[0].name;
+        }
+    %>
+
+    <!-- Showcase post -->
+    <!-- We don't show standalone showcase posts, but link to them externally. -->
+
+    <!-- News post -->
+    <%
+        if(firstCategory == "news") {
+    %>
+        <%- partial('partial/news/news-full', {item: page}) %>
+    <%
+        }
+    %>
+
+</div>

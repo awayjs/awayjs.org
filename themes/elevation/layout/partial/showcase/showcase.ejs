@@ -1,31 +1,28 @@
-<!-- Notes: Accepts an itemCount var that controls how many items are shown. -->
-<div class="wrapper style1">
-    <section class="container">
+<!-- Accepts an itemCount var that controls how many items are shown. -->
+<section class="container">
 
-        <!-- Title -->
-        <header class="major">
-            <h2>Showcase</h2>
-        </header>
+    <!-- Title -->
+    <header class="major">
+        <h2>Showcase</h2>
+    </header>
 
-        <!-- Showcase posts -->
-        <div class="row">
+    <!-- Showcase posts -->
+    <div class="row">
 
-            <%
-                var count = 0;
-                for(var i = 0; i < page.posts.length; i++) {
-                var item = page.posts.data[i];
-                if(item.categories.data.length == 0) { continue; }
-                var firstCategory = item.categories.data[0];
-                if(firstCategory.name != "showcase") { continue; }
-                count++;
-                if(itemCount != 0 && count > itemCount) { break; }
-            %>
-                <%- partial('partial/showcase/showcase-excerpt', {item: item}) %>
-            <% } %>
+        <%
+            var count = 0;
+            for(var i = 0; i < page.posts.length; i++) {
+            var item = page.posts.data[i];
+            if(item.categories.data.length == 0) { continue; }
+            var firstCategory = item.categories.data[0];
+            if(firstCategory.name != "showcase") { continue; }
+            count++;
+            if(itemCount != 0 && count > itemCount) { break; }
+        %>
+            <%- partial('partial/showcase/showcase-excerpt', {item: item}) %>
+        <% } %>
 
-        </div>
-
-    </section>
+    </div>
 
     <!-- Go to showcase page -->
     <% if(itemCount != 0) { %>
@@ -34,4 +31,4 @@
     </ul>
     <% } %>
 
-</div>
+</section>

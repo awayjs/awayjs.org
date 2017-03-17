@@ -1,44 +1,36 @@
-<div class="wrapper style1">
-    <section class="container">
+<section class="container">
 
-        <!-- Title -->
-        <header class="major">
-            <h2>News</h2>
-        </header>
+    <!-- Title -->
+    <header class="major">
+        <h2>News</h2>
+    </header>
 
-        <!-- Showcase posts -->
-        <ul class="alt">
+    <!-- Showcase posts -->
+    <ul class="alt">
 
-            <%
-                for(var i = 0; i < page.posts.length; i++) {
+        <li>
+        <%
+            for(var i = 0; i < page.posts.length; i++) {
 
-                    var item = page.posts.data[i];
+                var item = page.posts.data[i];
 
-                    // Skip if the item has no categories.
-                    if(item.categories.data.length == 0) { continue; }
+                // Skip if the item has no categories.
+                if(item.categories.data.length == 0) { continue; }
 
-                    // Skip if the category is not
-                    var firstCategory = item.categories.data[0];
-                    if(firstCategory.name != "news") { continue; }
+                // Skip if the category is not
+                var firstCategory = item.categories.data[0];
+                if(firstCategory.name != "news") { continue; }
 
-                    if(i == 0) { %>
-                        <%- partial('partial/news/news-full', {item: item}) %>
-                    <% }
-                    else { %>
-                        <%- partial('partial/news/news-excerpt', {item: item}) %>
-                    <% }
-                }
-             %>
+                if(i == 0) { %>
+                    <%- partial('partial/news/news-full', {item: item}) %>
+                <% }
+                else { %>
+                    <%- partial('partial/news/news-excerpt', {item: item}) %>
+                <% }
+            }
+         %>
+        </li>
 
-        </ul>
-
-    </section>
-
-    <!-- Go to showcase page -->
-    <% if(itemCount != 0) { %>
-    <ul class="actions">
-        <li style="display:table; margin:0px auto 0px auto;"><a href="/showcase" class="button alt">See all</a></li>
     </ul>
-    <% } %>
 
-</div>
+</section>
