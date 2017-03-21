@@ -1,0 +1,29 @@
+<section id="three" class="wrapper style1">
+    <div class="container">
+
+        <header class="major">
+            <h2>Showcase</h2>
+            <p>Ipsum dolor tempus commodo turpis adipiscing adipiscing in tempor placerat<br />
+                sed amet accumsan enim lorem sem turpis ut. Massa amet erat accumsan curae<br />
+                blandit porttitor faucibus in nisl nisi volutpat massa mi non nascetur.</p>
+        </header>
+
+        <div class="row">
+
+            <%
+            var count = 0;
+            for(var i = 0; i < page.posts.length; i++) {
+                var item = page.posts.data[i];
+                if(item.categories.data.length == 0) { continue; }
+                var firstCategory = item.categories.data[0];
+                if(firstCategory.name != "showcase") { continue; }
+                count++;
+                if(count > 3) { break; }
+            %>
+            <%- partial('partial/showcase/showcase-excerpt', {item: item}) %>
+            <% } %>
+
+        </div>
+
+    </div>
+</section>

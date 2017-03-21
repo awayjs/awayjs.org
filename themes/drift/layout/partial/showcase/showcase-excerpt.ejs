@@ -1,0 +1,10 @@
+<div class="4u 6u(medium) 12u$(small)">
+    <article class="box post">
+        <a href="<%- item.link %>" class="image fit"><img src="<%- url_for(item.thumbnail) %>" alt="" /></a>
+        <h3><%= item.title %></h3>
+        <p><%- item.excerpt || item.content %></p>
+        <ul class="actions">
+            <li><a href="#" class="button">Learn More</a></li>
+        </ul>
+    </article>
+</div>
