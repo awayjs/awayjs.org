@@ -1,0 +1,13 @@
+<div class="wrapper style1">
+
+    <!-- Category = showcase -->
+    <% if(page.category == "showcase") { %>
+    <%- partial('partial/showcase/showcase', {page: page, itemCount: 0}) %>
+    <% } %>
+
+    <!-- Category = news -->
+    <% if(page.category == "news") { %>
+    <%- partial('partial/news/news', {page: page, itemCount: 0}) %>
+    <% } %>
+
+</div>

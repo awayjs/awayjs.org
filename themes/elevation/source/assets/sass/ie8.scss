@@ -1,0 +1,83 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+/*
+	Elevation by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+*/
+
+/* List */
+
+	ul {
+		&.labeled-icons {
+			li {
+				.icon {
+					-ms-behavior: url('assets/js/ie/PIE.htc');
+				}
+			}
+		}
+	}
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		&.alt {
+			border: solid 2px _palette(border);
+		}
+	}
+
+/* Icon */
+
+	.icon {
+		&.major {
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+		}
+	}
+
+/* Form */
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select {
+		line-height: _size(element-height);
+	}
+
+/* Wrapper */
+
+	.wrapper {
+		&.style2 {
+			input[type="submit"],
+			input[type="reset"],
+			input[type="button"],
+			.button {
+				&.alt {
+					border: solid 2px #fff;
+				}
+			}
+		}
+	}
+
+/* Header */
+
+	.dropotron {
+		&.level-0 {
+			margin-top: 0;
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+/* Banner */
+
+	#banner {
+		background-image: url('images/ie/banner.png');
+	}

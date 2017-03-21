@@ -1,0 +1,57 @@
+<header id="header" class="">
+    <h1><a href="<%= config.root %>"><%= config.title %></a></h1>
+    <nav id="nav">
+        <ul>
+            <%
+                for(var name in theme.menu) {
+                    console.log(name);
+                    var obj = theme.menu[name];
+                    if(obj && obj.submenu != null) {
+            %>
+                        <li>
+                            <a href="" class="icon fa-angle-down"><%= name %></a>
+                            <ul>
+            <%
+                            for(var subname in obj.submenu) {
+                                console.log(subname);
+                                var subobj = obj.submenu[subname];
+            %>
+                                <li>
+                                    <a href="<%- url_for(subobj) %>"><%= subname %></a>
+                                </li>
+            <%
+                            }
+            %>
+                            </ul>
+                        </li>
+            <%
+                    }
+                    else {
+            %>
+                        <li>
+                            <a href="<%- url_for(obj) %>"><%= name %></a>
+                        </li>
+            <%
+                    }
+                }
+            %>
+
+            <!-- Sub-menu example -->
+            <!--<li>-->
+                <!--<a href="" class="icon fa-angle-down">Modules</a>-->
+                <!--<ul>-->
+                    <!--<li><a href="">Core</a></li>-->
+                    <!--<li><a href="">Graphics</a></li>-->
+                    <!--<li><a href="">Stage</a></li>-->
+                    <!--<li><a href="">Scene</a></li>-->
+                    <!--<li><a href="">Renderer</a></li>-->
+                    <!--<li><a href="">View</a></li>-->
+                    <!--<li><a href="">Parsers</a></li>-->
+                    <!--<li><a href="">Player</a></li>-->
+                    <!--<li><a href="">Materials</a></li>-->
+                <!--</ul>-->
+            <!--</li>-->
+
+        </ul>
+    </nav>
+</header>
